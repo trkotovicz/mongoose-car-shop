@@ -38,9 +38,14 @@ const carMockForChangeWithId: ICar & { _id: string }= {
   _id: '6323641b3bd18401fb821e47'
 }
 
+const carMockInvalid: any = {
+  model: 'Fiat Uno'
+}
+
 export {
   carMock,
   carMockWithId,
   carMockForChange,
   carMockForChangeWithId,
+  carMockInvalid,
 };
