@@ -7,8 +7,8 @@ import motorcycleRouter from './routes/Motorcycle';
 const app = express();
 app.use(express.json());
 
-app.use(carRouter);
-app.use(motorcycleRouter);
+app.use('/cars', carRouter);
+app.use('/motorcycles', motorcycleRouter);
 
 app.use(errorHandler);
 
